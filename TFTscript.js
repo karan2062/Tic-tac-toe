@@ -58,13 +58,13 @@ function winner() {
                 })
             }
         }
-
     })
 }
 
 resetBtn.addEventListener("click",()=>{
     boxes.forEach((box)=>{
         box.innerText='';
+        box.disabled=false;
     })
     h4.innerText = `Show winner`
 })
